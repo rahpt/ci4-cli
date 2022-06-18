@@ -19,9 +19,9 @@
         }
     ],
     "autoload": {
-	    "psr-4": {
-		    "Cli\\": "src/"
-		}
-	},
+        "psr-4": {
+            "Cli\\": "src/"
+	}
+    },
     "minimum-stability": "dev"
 }
