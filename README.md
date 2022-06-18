@@ -1,2 +1,2 @@
-# cli
-CI4 Spark CLI Extend
+# CI4-CLI
+Codeigniter4 Modular Spark CLI Extend

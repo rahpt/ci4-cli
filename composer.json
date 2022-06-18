@@ -1,6 +1,6 @@
 {
     "name": "rahpt/cli",
-    "description": "CI4 Modular Command EX",
+    "description": "Codeigniter4 Modular Spark CLI Extend",
     "type": "library",
     "keywords": [
         "codeigniter",
@@ -8,20 +8,20 @@
         "cli",
         "create"
     ],
-    "license": "Unlicense",
     "require": {
-     "php": "^7.4"
+        "php": "^7.4"
     },
-"authors": [
-      {
-          "name": "Jose Proenca",
-          "email": "jose.proenca@rah.pt"
+    "license": "Unlicense",
+    "authors": [
+        {
+            "name": "Jose Proenca",
+            "email": "jose.proenca@rah.pt"
         }
     ],
-  "minimum-stability": "dev",
     "autoload": {
-		"psr-4": {
-			"rahpt\\": "src/"
+	    "psr-4": {
+		    "Cli\\": "src/"
 		}
-	}
+	},
+    "minimum-stability": "dev"
 }
