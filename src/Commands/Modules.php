@@ -7,33 +7,12 @@ use CodeIgniter\CLI\CLI;
 
 class Modules extends BaseCommand
 {
-    /**
-     * Group
-     *
-     * @var string
-     */
+
     protected $group = 'CommandEx';
-
-    /**
-     * Command's name
-     *
-     * @var string
-     */
     protected $name = 'module:create';
-
-    /**
-     * Command description
-     *
-     * @var string
-     */
     protected $description = 'Create CodeIgniter4 Modules structure';
-
-    /**
-     * Command usage
-     *
-     * @var string
-     */
     protected $usage = 'module:create [ModuleName] [Options]';
+    protected $arguments = ['ModuleName' => 'Module name to be created'];
 
     /**
      * @param array $params
@@ -56,13 +35,6 @@ class Modules extends BaseCommand
             mkdir($this->module_folder . DIRECTORY_SEPARATOR . $this->module_name, 0777, true);
         }
     }
-
-    /**
-     * the Command's Arguments
-     *
-     * @var array
-     */
-    protected $arguments = ['ModuleName' => 'Module name to be created'];
 
     private function checkParams(array $params)
     {
